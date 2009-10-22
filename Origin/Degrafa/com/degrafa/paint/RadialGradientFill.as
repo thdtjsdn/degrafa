@@ -22,9 +22,9 @@
 package com.degrafa.paint{
 	
 	import com.degrafa.core.IGraphicsFill;
-	import com.degrafa.IGeometryComposition;
 	
 	import flash.display.Graphics;
+	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	
 	
@@ -168,26 +168,26 @@ package com.degrafa.paint{
 		* @param graphics The current context to draw to.
 		* @param rc A Rectangle object used for fill bounds.  
 		**/
-		override public function begin(graphics:Graphics, rc:Rectangle):void{
+		override public function begin(graphics:Graphics, rc:Rectangle, targetOrigin:Point):void{
 			var forceCircle:Number;
 			if (_cx && _cy && _radius) {
-				if (_coordType == "relative") super.begin(graphics, new Rectangle(rc.x + cx-radiusX, rc.y + cy-radiusY, radiusX*2, radiusY*2));
+				if (_coordType == "relative") super.begin(graphics, new Rectangle(rc.x + cx-radiusX, rc.y + cy-radiusY, radiusX*2, radiusY*2), targetOrigin);
 				else if (_coordType == "ratio") {
 					forceCircle = _ellipse? NaN:Math.sqrt(rc.width * rc.width + rc.height * rc.height) / Math.SQRT2;
-					super.begin(graphics, new Rectangle(rc.x + (cx * rc.width)-radiusX*(_ellipse?rc.width:forceCircle), rc.y + (cy * rc.height)-radiusY*(_ellipse?rc.height:forceCircle), radiusX *2* ((_ellipse? rc.width:forceCircle)), radiusY*2 * (_ellipse? rc.height:(_ellipse? rc.width:forceCircle))));
+					super.begin(graphics, new Rectangle(rc.x + (cx * rc.width)-radiusX*(_ellipse?rc.width:forceCircle), rc.y + (cy * rc.height)-radiusY*(_ellipse?rc.height:forceCircle), radiusX *2* ((_ellipse? rc.width:forceCircle)), radiusY*2 * (_ellipse? rc.height:(_ellipse? rc.width:forceCircle))), targetOrigin);
 				}
-				else super.begin(graphics,new Rectangle(cx-radiusX,cy-radiusY,radiusX*2,radiusY*2));
+				else super.begin(graphics,new Rectangle(cx-radiusX,cy-radiusY,radiusX*2,radiusY*2), targetOrigin);
 			}
 			else if (_radius) {
-			if (_coordType == "relative") super.begin(graphics, new Rectangle(rc.x -radiusX, rc.y -radiusY, radiusX*2, radiusY*2));
+			if (_coordType == "relative") super.begin(graphics, new Rectangle(rc.x -radiusX, rc.y -radiusY, radiusX*2, radiusY*2), targetOrigin);
 				else if (_coordType == "ratio") {
 					forceCircle = _ellipse? NaN:Math.sqrt(rc.width * rc.width + rc.height * rc.height) / Math.SQRT2;
-					super.begin(graphics, new Rectangle(rc.x -radiusX * (_ellipse? rc.width:forceCircle), rc.y -radiusY * (_ellipse? rc.height:forceCircle), radiusX * 2 * (_ellipse? rc.width:forceCircle), radiusY*2 * (_ellipse? rc.height:forceCircle ))); 
+					super.begin(graphics, new Rectangle(rc.x -radiusX * (_ellipse? rc.width:forceCircle), rc.y -radiusY * (_ellipse? rc.height:forceCircle), radiusX * 2 * (_ellipse? rc.width:forceCircle), radiusY*2 * (_ellipse? rc.height:forceCircle )), targetOrigin); 
 				}
-				else super.begin(graphics,new Rectangle(0,0,radiusX*2,radiusY*2));
+				else super.begin(graphics,new Rectangle(0,0,radiusX*2,radiusY*2), targetOrigin);
 			}
 			else {
-				super.begin(graphics,rc);
+				super.begin(graphics, rc, targetOrigin);
 			}
 		}
 		

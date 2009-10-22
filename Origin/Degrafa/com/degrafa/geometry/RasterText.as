@@ -35,6 +35,7 @@ package com.degrafa.geometry{
 	import flash.display.Shape;
 	import flash.display.Sprite;
 	import flash.geom.Matrix;
+	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	import flash.text.AntiAliasType;
 	import flash.text.Font;
@@ -270,7 +271,7 @@ package com.degrafa.geometry{
 		override public function initFill(graphics:Graphics, rc:Rectangle):void {
 			if (background && _backgroundFill ) {
 				internalbackground.graphics.clear();
-				_backgroundFill.begin(internalbackground.graphics, rc);
+				_backgroundFill.begin(internalbackground.graphics, rc, new Point(0,0));
 				internalbackground.graphics.drawRect(rc.x, rc.y, rc.width, rc.height);
 			} else {
 				internalbackground.graphics.clear();

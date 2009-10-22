@@ -21,14 +21,15 @@
 ////////////////////////////////////////////////////////////////////////////////
 package com.degrafa.paint{
 	
-	import com.degrafa.geometry.command.CommandStack;
 	import com.degrafa.IGeometryComposition;
 	import com.degrafa.core.DegrafaObject;
 	import com.degrafa.core.IGraphicsFill;
 	import com.degrafa.core.utils.ColorUtil;
+	import com.degrafa.geometry.command.CommandStack;
 	import com.degrafa.paint.palette.PaletteEntry;
 	
 	import flash.display.Graphics;
+	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	
 	import mx.events.PropertyChangeEvent;
@@ -217,7 +218,7 @@ package com.degrafa.paint{
 		* @param graphics The current context to draw to.
 		* @param rc A Rectangle object used for fill bounds.  
 		**/
-		public function begin(graphics:Graphics, rc:Rectangle):void{
+		public function begin(graphics:Graphics, rc:Rectangle, targetOrigin:Point):void{
 			
 			//ensure that all defaults are in fact set these are temp until fully tested
 			if (isNaN(_alpha)) { _alpha = 1; }

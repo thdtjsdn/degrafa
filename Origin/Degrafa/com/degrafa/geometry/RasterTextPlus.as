@@ -28,14 +28,14 @@ package com.degrafa.geometry{
 	import com.degrafa.geometry.text.DegrafaTextFormat;
 	import com.degrafa.paint.SolidFill;
 	import com.degrafa.paint.SolidStroke;
-	import flash.display.Shape;
-	import flash.filters.BlurFilter;
-	import flash.geom.Matrix;
 	
 	import flash.accessibility.AccessibilityProperties;
 	import flash.display.DisplayObject;
 	import flash.display.Graphics;
+	import flash.display.Shape;
 	import flash.display.Sprite;
+	import flash.geom.Matrix;
+	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	import flash.text.AntiAliasType;
 	import flash.text.Font;
@@ -119,8 +119,8 @@ package com.degrafa.geometry{
 			if(autoSizeField){
 				textField.width = textField.textWidth + 4;
 				textField.height = textField.textHeight + 4;
-				_width = textField.width;
-				_height = textField.height;
+				width = textField.width;
+				height = textField.height;
 				realign();
 			}
 		}
@@ -169,8 +169,8 @@ package com.degrafa.geometry{
 		}
 		override public function set x(value:Number):void{
 			if(_x != value){
-				_x = value;
 				invalidated = true;
+				initChange("x",_x, _x = value, this);
 			}
 		}
 		
@@ -187,8 +187,8 @@ package com.degrafa.geometry{
 		}
 		override public function set y(value:Number):void{
 			if(_y != value){
-				_y = value;
 				invalidated = true;
+				initChange("y",_y, _y = value, this)
 			}
 		}
 		
@@ -203,8 +203,8 @@ package com.degrafa.geometry{
 		}
 		override public function set width(value:Number):void{
 			if(_width != value){
-				_width = value;
 				invalidated = true;
+				initChange("width",_width, _width = value, this);
 			}
 		}
 		
@@ -220,8 +220,8 @@ package com.degrafa.geometry{
 		}
 		override public function set height(value:Number):void{
 			if(_height != value){
-				_height = value;
 				invalidated = true;
+				initChange("height",_height, _height = value, this)
 			}
 		}
 		
@@ -251,7 +251,7 @@ package com.degrafa.geometry{
 		override public function initFill(graphics:Graphics, rc:Rectangle):void {
 			if (background && _backgroundFill ) {
 				internalbackground.graphics.clear();
-				_backgroundFill.begin(internalbackground.graphics, rc);
+				_backgroundFill.begin(internalbackground.graphics, rc, new Point(0,0));
 				internalbackground.graphics.drawRect(rc.x, rc.y, rc.width, rc.height);
 			}
 			if (!(_fill is SolidFill)) {

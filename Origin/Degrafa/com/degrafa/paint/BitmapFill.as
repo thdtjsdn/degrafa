@@ -21,17 +21,18 @@
 ////////////////////////////////////////////////////////////////////////////////
 package com.degrafa.paint{
 	
+	import com.degrafa.IGeometryComposition;
 	import com.degrafa.core.DegrafaObject;
 	import com.degrafa.core.IBlend;
 	import com.degrafa.core.IGraphicsFill;
 	import com.degrafa.core.ITransformablePaint;
 	import com.degrafa.core.Measure;
-	import com.degrafa.geometry.command.CommandStack;
 	import com.degrafa.geometry.Geometry;
-	import com.degrafa.IGeometryComposition;
 	import com.degrafa.transform.ITransform;
-	
-	import mx.events.PropertyChangeEventKind;
+	import com.degrafa.utilities.external.ExternalBitmapData;
+	import com.degrafa.utilities.external.ExternalDataAsset;
+	import com.degrafa.utilities.external.ExternalDataPropertyChangeEvent;
+	import com.degrafa.utilities.external.LoadingLocation;
 	
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
@@ -43,14 +44,11 @@ package com.degrafa.paint{
 	import flash.geom.Matrix;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
-	
 	import flash.utils.getDefinitionByName;
-	import mx.events.PropertyChangeEvent;
-	import com.degrafa.utilities.external.ExternalBitmapData;
-	import com.degrafa.utilities.external.ExternalDataAsset;
-	import com.degrafa.utilities.external.LoadingLocation;
-	import com.degrafa.utilities.external.ExternalDataPropertyChangeEvent;
 	import flash.utils.setTimeout;
+	
+	import mx.events.PropertyChangeEvent;
+	import mx.events.PropertyChangeEventKind;
 	
 	[DefaultProperty("source")]
 	
@@ -616,7 +614,7 @@ package com.degrafa.paint{
 		/**
 		* Begins the bitmap fill.
 		**/
-		public function begin(graphics:Graphics, rc:Rectangle):void {
+		public function begin(graphics:Graphics, rc:Rectangle, targetOrigin:Point):void {
 			
 			if(!bitmapData) {
 				return;

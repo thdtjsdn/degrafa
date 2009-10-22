@@ -21,22 +21,20 @@
 ////////////////////////////////////////////////////////////////////////////////
 package com.degrafa.paint{
 	
+	import com.degrafa.IGeometryComposition;
 	import com.degrafa.core.DegrafaObject;
 	import com.degrafa.core.IBlend;
 	import com.degrafa.core.IGraphicsFill;
 	import com.degrafa.core.ITransformablePaint;
-	import com.degrafa.geometry.command.CommandStack;
 	import com.degrafa.geometry.Geometry;
-	import com.degrafa.IGeometryComposition;
 	import com.degrafa.transform.ITransform;
-	import flash.geom.Point;
 	
 	import flash.display.BitmapData;
 	import flash.display.Graphics;
 	import flash.display.Shape;
 	import flash.geom.Matrix;
+	import flash.geom.Point;
 	import flash.geom.Rectangle;
-	
 	
 	import mx.events.PropertyChangeEvent;
 	import mx.graphics.IFill;
@@ -179,12 +177,12 @@ package com.degrafa.paint{
 		/**
 		* Begins the complex fill.
 		**/
-		public function begin(graphics:Graphics, rc:Rectangle):void {
+		public function begin(graphics:Graphics, rc:Rectangle, transformPoint:Point):void {
 			// todo: optimize with more cacheing
 			if(rc.width > 0 && rc.height > 0 && _fills != null && _fills.length > 0) {
 				if (_fills.length == 1) { // short cut
 					if (_fills[0] is ITransformablePaint) (_fills[0] as ITransformablePaint).requester = _requester;
-					(_fills[0] as IFill ).begin(graphics, rc);
+					(_fills[0] as IFill ).begin(graphics, rc, transformPoint);
 				} else {
 					var matrix:Matrix = new Matrix(1, 0, 0, 1, rc.x*-1, rc.y*-1);
 					if(fillsChanged || bitmapData == null || Math.ceil(rc.width) != bitmapData.width || Math.ceil(rc.height) != bitmapData.height) { // cacheing
@@ -198,13 +196,13 @@ package com.degrafa.paint{
 									bitmapData.draw(shape, matrix,null,null,null,true);
 								}
 								g.clear();
-								fill.begin(g, rc);
+								fill.begin(g, rc, transformPoint);
 								g.drawRect(rc.x, rc.y, rc.width, rc.height);
 								fill.end(g);
 								bitmapData.draw(shape, matrix, null, (fill as IBlend).blendMode,null,true);
 								lastType = "blend";
 							} else {
-								fill.begin(g, rc);
+								fill.begin(g, rc, transformPoint);
 								g.drawRect(rc.x, rc.y, rc.width, rc.height);
 								fill.end(g);
 								lastType = "fill";

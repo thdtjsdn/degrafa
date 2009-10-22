@@ -21,18 +21,19 @@
 ////////////////////////////////////////////////////////////////////////////////
 package com.degrafa.paint{
 	
-	import com.degrafa.core.DegrafaObject;
-	import com.degrafa.core.collections.GradientStopsCollection;
-	import com.degrafa.core.ITransformablePaint;
-	import com.degrafa.geometry.command.CommandStack;
-	import com.degrafa.geometry.Geometry;
 	import com.degrafa.IGeometryComposition;
+	import com.degrafa.core.DegrafaObject;
+	import com.degrafa.core.ITransformablePaint;
+	import com.degrafa.core.collections.GradientStopsCollection;
+	import com.degrafa.geometry.Geometry;
+	import com.degrafa.geometry.command.CommandStack;
 	import com.degrafa.transform.ITransform;
 	
 	import flash.display.Graphics;
 	import flash.geom.Matrix;
-	import flash.geom.Rectangle;
 	import flash.geom.Point;
+	import flash.geom.Rectangle;
+	
 	import mx.events.PropertyChangeEvent;
 	
 	[DefaultProperty("gradientStops")]
@@ -278,7 +279,7 @@ package com.degrafa.paint{
 		* @param graphics The current context to draw to.
 		* @param rc A Rectangle object used for fill bounds.  
 		**/
-		public function begin(graphics:Graphics, rc:Rectangle):void{
+		public function begin(graphics:Graphics, rc:Rectangle, targetOrigin:Point):void{
 			var matrix:Matrix;
 
 			//ensure that all defaults are in fact set these are temp until fully tested

@@ -763,7 +763,7 @@ package com.degrafa.geometry{
 	        {   
 				//we can't pass a reference to the requesting Geometry in the method signature with IFill - its required for transform inheritance by some fills
 				if (_fill is ITransformablePaint) (_fill as ITransformablePaint).requester = this;
-	        	_fill.begin(graphics, (rc) ? rc:null);	
+	        	_fill.begin(graphics, (rc) ? rc:null, new Point(0,0));	
 				CommandStack.currentFill = _fill;
 	        } else CommandStack.currentFill = null;
 	        

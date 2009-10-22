@@ -21,30 +21,27 @@
 ////////////////////////////////////////////////////////////////////////////////
 package com.degrafa.paint{
 	
-	import com.degrafa.core.collections.FilterCollection;
-	import com.degrafa.core.ITransformablePaint;
-	import com.degrafa.events.DegrafaEvent;
-	import com.degrafa.geometry.command.CommandStack;
 	import com.degrafa.GeometryComposition;
 	import com.degrafa.GeometryGroup;
-	import com.degrafa.transform.TransformBase;
-
-	import com.degrafa.geometry.RegularRectangle;
 	import com.degrafa.IGeometryComposition;
 	import com.degrafa.core.DegrafaObject;
 	import com.degrafa.core.IBlend;
 	import com.degrafa.core.IGraphicsFill;
+	import com.degrafa.core.ITransformablePaint;
 	import com.degrafa.core.Measure;
+	import com.degrafa.core.collections.FilterCollection;
+	import com.degrafa.events.DegrafaEvent;
 	import com.degrafa.geometry.Geometry;
+	import com.degrafa.geometry.RegularRectangle;
+	import com.degrafa.geometry.command.CommandStack;
 	import com.degrafa.transform.ITransform;
-	import flash.display.BlendMode;
-	import flash.display.Sprite;
-	import flash.filters.BitmapFilter;
+	import com.degrafa.transform.TransformBase;
 	
 	import flash.display.BitmapData;
 	import flash.display.Graphics;
 	import flash.display.Shape;
 	import flash.events.Event;
+	import flash.filters.BitmapFilter;
 	import flash.geom.Matrix;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
@@ -1014,7 +1011,7 @@ package com.degrafa.paint{
 		/**
 		 * begins the VectorFill
 		 */
-		public function begin(graphics:Graphics, rc:Rectangle):void {
+		public function begin(graphics:Graphics, rc:Rectangle, targetOrigin:Point):void {
 
 			if (rc && (rc.isEmpty() || rc.width*rc.height<1)) return; //no fill
 			if (_enableSourceClipping && !_clipSourceRect) return ; // empty fill....as clipSource has not yet been assigned.

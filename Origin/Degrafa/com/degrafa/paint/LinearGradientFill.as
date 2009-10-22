@@ -22,10 +22,9 @@
 package com.degrafa.paint{
 	
 	import com.degrafa.core.IGraphicsFill;
-	import com.degrafa.IGeometryComposition;
-	import flash.geom.Matrix;
 	
 	import flash.display.Graphics;
+	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	
 	
@@ -167,19 +166,19 @@ package com.degrafa.paint{
 		* @param graphics The current context to draw to.
 		* @param rc A Rectangle object used for fill bounds.  
 		**/
-		override public function begin(graphics:Graphics, rc:Rectangle):void {
+		override public function begin(graphics:Graphics, rc:Rectangle, targetOrigin:Point):void {
 			if (_x && _y && _width && _height) {
-				if (_coordType == "relative") super.begin(graphics, new Rectangle(rc.x + x, rc.y + y, width, height));
-				else if (_coordType == "ratio") super.begin(graphics, new Rectangle(rc.x + x * rc.width, rc.y + y * rc.height, width * rc.width, height * rc.height));
-				else super.begin(graphics, new Rectangle(x, y, width, height));
+				if (_coordType == "relative") super.begin(graphics, new Rectangle(rc.x + x, rc.y + y, width, height), targetOrigin);
+				else if (_coordType == "ratio") super.begin(graphics, new Rectangle(rc.x + x * rc.width, rc.y + y * rc.height, width * rc.width, height * rc.height), targetOrigin);
+				else super.begin(graphics, new Rectangle(x, y, width, height), targetOrigin);
 			}
 			else if (_width && _height) {
-				if (_coordType == "relative") super.begin(graphics, new Rectangle(rc.x , rc.y , width, height));
-				else if (_coordType == "ratio") super.begin(graphics, new Rectangle(rc.x, rc.y , width * rc.width, height * rc.height));
-				else super.begin(graphics, new Rectangle(0, 0, width, height));
+				if (_coordType == "relative") super.begin(graphics, new Rectangle(rc.x , rc.y , width, height), targetOrigin);
+				else if (_coordType == "ratio") super.begin(graphics, new Rectangle(rc.x, rc.y , width * rc.width, height * rc.height), targetOrigin);
+				else super.begin(graphics, new Rectangle(0, 0, width, height), targetOrigin);
 			}
 			else{
-				super.begin(graphics,rc);
+				super.begin(graphics, rc, targetOrigin);
 			}
 		}
 		

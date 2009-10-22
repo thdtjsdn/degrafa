@@ -21,14 +21,15 @@
 ////////////////////////////////////////////////////////////////////////////////
 package com.degrafa.paint{
 	
+	import com.degrafa.IGeometryComposition;
 	import com.degrafa.core.DegrafaObject;
 	import com.degrafa.core.IBlend;
 	import com.degrafa.core.IGraphicsFill;
 	import com.degrafa.core.ITransformablePaint;
-	import com.degrafa.IGeometryComposition;
-	import flash.display.Graphics;
-	import flash.geom.Rectangle;
 	
+	import flash.display.Graphics;
+	import flash.geom.Point;
+	import flash.geom.Rectangle;
 	
 	import mx.events.PropertyChangeEvent;
 	import mx.graphics.IFill;
@@ -116,10 +117,10 @@ package com.degrafa.paint{
 		/**
 		* Begins the blend fill.
 		**/
-		public function begin(graphics:Graphics, rectangle:Rectangle):void {
+		public function begin(graphics:Graphics, rectangle:Rectangle, transformCenter:Point):void {
 			if (fill != null) {
 			if (fill is ITransformablePaint)	(fill as ITransformablePaint).requester = _requester;
-				fill.begin(graphics, rectangle);
+				fill.begin(graphics, rectangle, transformCenter);
 				_requester = null;
 			}
 		}

@@ -25,23 +25,20 @@ package com.degrafa{
 	import com.degrafa.core.IGraphicsFill;
 	import com.degrafa.core.IGraphicsStroke;
 	import com.degrafa.core.collections.FillCollection;
-	
 	import com.degrafa.core.collections.StrokeCollection;
 	
-	import flash.display.DisplayObject;
 	import flash.display.DisplayObjectContainer;
 	import flash.display.Graphics;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	
-	import mx.events.FlexEvent;
-	import mx.utils.NameUtil;
-
-
 	import mx.core.IMXMLObject;
+	import mx.events.FlexEvent;
 	import mx.events.PropertyChangeEvent;
 	import mx.events.PropertyChangeEventKind;
+	import mx.utils.NameUtil;
 	
 	[Event(name="initialize", type="mx.events.FlexEvent")]
 	[Event(name="propertyChange", type="mx.events.PropertyChangeEvent")]
@@ -342,10 +339,10 @@ package com.degrafa{
 	        	
 	        	if(!rc){
 	        		var rect:Rectangle = new Rectangle(0,0,width,height);
-	        		fill.begin(this.graphics, rect);
+	        		fill.begin(this.graphics, rect, new Point(0,0));
 	        	}
 	        	else{
-	        		fill.begin(this.graphics, rc);
+	        		fill.begin(this.graphics, rc, new Point(0,0));
 	        	}
 	        	
 	        }
