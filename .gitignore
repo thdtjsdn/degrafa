@@ -1,0 +1,6 @@
+*.o
+.DS_Store
+**/*.log
+bin/degrafa.swc
+bin/*.swc
+.svn

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.degrafa.GeometryComposition"/>
+<classEntry path="com.degrafa.GeometryGroup"/>
+<classEntry path="com.degrafa.Graphic"/>
+<classEntry path="com.degrafa.GraphicImage"/>
+<classEntry path="com.degrafa.GraphicPoint"/>
+<classEntry path="com.degrafa.GraphicPointEX"/>
+<classEntry path="com.degrafa.GraphicText"/>
+<classEntry path="com.degrafa.GraphicTextPlus"/>
+<classEntry path="com.degrafa.IGeometry"/>
+<classEntry path="com.degrafa.IGeometryComposition"/>
+<classEntry path="com.degrafa.IGraphic"/>
+<classEntry path="com.degrafa.IGraphicPoint"/>
+<classEntry path="com.degrafa.Surface"/>
+<classEntry path="com.degrafa.core.DegrafaObject"/>
+<classEntry path="com.degrafa.core.IBlend"/>
+<classEntry path="com.degrafa.core.IDegrafaObject"/>
+<classEntry path="com.degrafa.core.IGraphicSkin"/>
+<classEntry path="com.degrafa.core.IGraphicsFill"/>
+<classEntry path="com.degrafa.core.IGraphicsStroke"/>
+<classEntry path="com.degrafa.core.ITransformablePaint"/>
+<classEntry path="com.degrafa.core.Measure"/>
+<classEntry path="com.degrafa.core.collections.DecoratorCollection"/>
+<classEntry path="com.degrafa.core.collections.DegrafaCollection"/>
+<classEntry path="com.degrafa.core.collections.DegrafaCursor"/>
+<classEntry path="com.degrafa.core.collections.DisplayObjectCollection"/>
+<classEntry path="com.degrafa.core.collections.FillCollection"/>
+<classEntry path="com.degrafa.core.collections.FilterCollection"/>
+<classEntry path="com.degrafa.core.collections.GeometryCollection"/>
+<classEntry path="com.degrafa.core.collections.GradientStopsCollection"/>
+<classEntry path="com.degrafa.core.collections.GraphicPointCollection"/>
+<classEntry path="com.degrafa.core.collections.GraphicPointEXCollection"/>
+<classEntry path="com.degrafa.core.collections.GraphicSkinCollection"/>
+<classEntry path="com.degrafa.core.collections.GraphicsCollection"/>
+<classEntry path="com.degrafa.core.collections.IDegrafaCollection"/>
+<classEntry path="com.degrafa.core.collections.RepeaterModifierCollection"/>
+<classEntry path="com.degrafa.core.collections.SegmentsCollection"/>
+<classEntry path="com.degrafa.core.collections.StrokeCollection"/>
+<classEntry path="com.degrafa.core.collections.TransformCollection"/>
+<classEntry path="com.degrafa.core.degrafa_internal"/>
+<classEntry path="com.degrafa.core.manipulators.DegrafaSkinManipulator"/>
+<classEntry path="com.degrafa.core.utils.CloneUtil"/>
+<classEntry path="com.degrafa.core.utils.ColorKeys"/>
+<classEntry path="com.degrafa.core.utils.ColorUtil"/>
+<classEntry path="com.degrafa.core.utils.StyleUtil"/>
+<classEntry path="com.degrafa.decorators.DecoratorBase"/>
+<classEntry path="com.degrafa.decorators.IDecorator"/>
+<classEntry path="com.degrafa.decorators.IRenderDecorator"/>
+<classEntry path="com.degrafa.decorators.RenderDecoratorBase"/>
+<classEntry path="com.degrafa.decorators.standard.SVGDashLine"/>
+<classEntry path="com.degrafa.decorators.standard.SloppyLineDecorator"/>
+<classEntry path="com.degrafa.events.DegrafaEvent"/>
+<classEntry path="com.degrafa.geometry.AdvancedCubicBezier"/>
+<classEntry path="com.degrafa.geometry.AdvancedQuadraticBezier"/>
+<classEntry path="com.degrafa.geometry.AdvancedRectangle"/>
+<classEntry path="com.degrafa.geometry.Circle"/>
+<classEntry path="com.degrafa.geometry.CubicBezier"/>
+<classEntry path="com.degrafa.geometry.Ellipse"/>
+<classEntry path="com.degrafa.geometry.EllipticalArc"/>
+<classEntry path="com.degrafa.geometry.Geometry"/>
+<classEntry path="com.degrafa.geometry.GeometryUnion"/>
+<classEntry path="com.degrafa.geometry.HorizontalLine"/>
+<classEntry path="com.degrafa.geometry.Line"/>
+<classEntry path="com.degrafa.geometry.Move"/>
+<classEntry path="com.degrafa.geometry.Path"/>
+<classEntry path="com.degrafa.geometry.Polygon"/>
+<classEntry path="com.degrafa.geometry.Polyline"/>
+<classEntry path="com.degrafa.geometry.QuadraticBezier"/>
+<classEntry path="com.degrafa.geometry.RasterImage"/>
+<classEntry path="com.degrafa.geometry.RasterText"/>
+<classEntry path="com.degrafa.geometry.RasterTextPlus"/>
+<classEntry path="com.degrafa.geometry.RegularRectangle"/>
+<classEntry path="com.degrafa.geometry.RoundedRectangle"/>
+<classEntry path="com.degrafa.geometry.RoundedRectangleComplex"/>
+<classEntry path="com.degrafa.geometry.SuperShape2D"/>
+<classEntry path="com.degrafa.geometry.VerticalLine"/>
+<classEntry path="com.degrafa.geometry.autoshapes.ArrowAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.AutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.AutoShapeTypeOffsets"/>
+<classEntry path="com.degrafa.geometry.autoshapes.BoxArrowBasicAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.BurstAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.CrossAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.DonutAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.FlowArrowAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.GearAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.HexagonAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.IsocelesTriangleAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.ObtuseTriangleAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.ParallelogramAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.RegularPolygonAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.StarAutoShape"/>
+<classEntry path="com.degrafa.geometry.autoshapes.TrapezoidAutoShape"/>
+<classEntry path="com.degrafa.geometry.command.CommandCollection"/>
+<classEntry path="com.degrafa.geometry.command.CommandCursor"/>
+<classEntry path="com.degrafa.geometry.command.CommandStack"/>
+<classEntry path="com.degrafa.geometry.command.CommandStackItem"/>
+<classEntry path="com.degrafa.geometry.display.IDisplayObjectProxy"/>
+<classEntry path="com.degrafa.geometry.layout.ILayout"/>
+<classEntry path="com.degrafa.geometry.layout.LayoutConstraint"/>
+<classEntry path="com.degrafa.geometry.layout.LayoutUtils"/>
+<classEntry path="com.degrafa.geometry.repeaters.ArcLineRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.CircleRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.CubicBezierRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.EllipseRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.EllipticalArcRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.HorizontalLineRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.LineRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.PolyLineRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.PolygonRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.QuadraticBezierRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.RegularRectangleRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.Repeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.RoundedRectangleComplexRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.RoundedRectangleRepeater"/>
+<classEntry path="com.degrafa.geometry.repeaters.VerticalLineRepeater"/>
+<classEntry path="com.degrafa.geometry.segment.ClosePath"/>
+<classEntry path="com.degrafa.geometry.segment.CubicBezierTo"/>
+<classEntry path="com.degrafa.geometry.segment.EllipticalArcTo"/>
+<classEntry path="com.degrafa.geometry.segment.HorizontalLineTo"/>
+<classEntry path="com.degrafa.geometry.segment.ISegment"/>
+<classEntry path="com.degrafa.geometry.segment.LineTo"/>
+<classEntry path="com.degrafa.geometry.segment.MoveTo"/>
+<classEntry path="com.degrafa.geometry.segment.QuadraticBezierTo"/>
+<classEntry path="com.degrafa.geometry.segment.Segment"/>
+<classEntry path="com.degrafa.geometry.segment.VerticalLineTo"/>
+<classEntry path="com.degrafa.geometry.splines.BasicSpline"/>
+<classEntry path="com.degrafa.geometry.splines.BezierSpline"/>
+<classEntry path="com.degrafa.geometry.splines.BezierSplineControl"/>
+<classEntry path="com.degrafa.geometry.splines.CardinalSpline"/>
+<classEntry path="com.degrafa.geometry.splines.CatmullRomSpline"/>
+<classEntry path="com.degrafa.geometry.splines.CubicCage"/>
+<classEntry path="com.degrafa.geometry.splines.IPlottableSpline"/>
+<classEntry path="com.degrafa.geometry.splines.ISpline"/>
+<classEntry path="com.degrafa.geometry.splines.NaturalCubicSpline"/>
+<classEntry path="com.degrafa.geometry.splines.PlottableCubicSpline"/>
+<classEntry path="com.degrafa.geometry.splines.QuadData"/>
+<classEntry path="com.degrafa.geometry.splines.QuadraticHermiteSpline"/>
+<classEntry path="com.degrafa.geometry.splines.QuadraticSpline"/>
+<classEntry path="com.degrafa.geometry.splines.SplineTypeEnum"/>
+<classEntry path="com.degrafa.geometry.stencil.Stencil"/>
+<classEntry path="com.degrafa.geometry.text.DegrafaTextFormat"/>
+<classEntry path="com.degrafa.geometry.utilities.ArcUtils"/>
+<classEntry path="com.degrafa.geometry.utilities.BezierUtils"/>
+<classEntry path="com.degrafa.geometry.utilities.GeometryUtils"/>
+<classEntry path="com.degrafa.paint.BitmapFill"/>
+<classEntry path="com.degrafa.paint.BlendFill"/>
+<classEntry path="com.degrafa.paint.ComplexFill"/>
+<classEntry path="com.degrafa.paint.EmptyFill"/>
+<classEntry path="com.degrafa.paint.EmptyStroke"/>
+<classEntry path="com.degrafa.paint.GradientFillBase"/>
+<classEntry path="com.degrafa.paint.GradientStop"/>
+<classEntry path="com.degrafa.paint.GradientStrokeBase"/>
+<classEntry path="com.degrafa.paint.LinearGradientFill"/>
+<classEntry path="com.degrafa.paint.LinearGradientStroke"/>
+<classEntry path="com.degrafa.paint.RadialGradientFill"/>
+<classEntry path="com.degrafa.paint.RadialGradientStroke"/>
+<classEntry path="com.degrafa.paint.SolidFill"/>
+<classEntry path="com.degrafa.paint.SolidStroke"/>
+<classEntry path="com.degrafa.paint.VectorFill"/>
+<classEntry path="com.degrafa.paint.palette.AutoPalette"/>
+<classEntry path="com.degrafa.paint.palette.InterpolatedColorPalette"/>
+<classEntry path="com.degrafa.paint.palette.Palette"/>
+<classEntry path="com.degrafa.paint.palette.PaletteEntry"/>
+<classEntry path="com.degrafa.paint.palette.PaletteUtils"/>
+<classEntry path="com.degrafa.paint.palette.PresetColorPalette"/>
+<classEntry path="com.degrafa.repeaters.GeometryRepeater"/>
+<classEntry path="com.degrafa.repeaters.IRepeaterModifier"/>
+<classEntry path="com.degrafa.repeaters.PropertyModifier"/>
+<classEntry path="com.degrafa.skins.CSSSkin"/>
+<classEntry path="com.degrafa.skins.GraphicBorderSkin"/>
+<classEntry path="com.degrafa.skins.GraphicPanelSkin"/>
+<classEntry path="com.degrafa.skins.GraphicProgrammaticSkin"/>
+<classEntry path="com.degrafa.skins.GraphicRectangularBorderSkin"/>
+<classEntry path="com.degrafa.states.AddChild"/>
+<classEntry path="com.degrafa.states.IDegrafaStateClient"/>
+<classEntry path="com.degrafa.states.IOverride"/>
+<classEntry path="com.degrafa.states.IStateClient"/>
+<classEntry path="com.degrafa.states.RemoveChild"/>
+<classEntry path="com.degrafa.states.RemoveChildren"/>
+<classEntry path="com.degrafa.states.SetProperties"/>
+<classEntry path="com.degrafa.states.SetProperty"/>
+<classEntry path="com.degrafa.states.State"/>
+<classEntry path="com.degrafa.states.StateManager"/>
+<classEntry path="com.degrafa.transform.ITransform"/>
+<classEntry path="com.degrafa.transform.MatrixTransform"/>
+<classEntry path="com.degrafa.transform.RotateTransform"/>
+<classEntry path="com.degrafa.transform.ScaleTransform"/>
+<classEntry path="com.degrafa.transform.SkewTransform"/>
+<classEntry path="com.degrafa.transform.Transform"/>
+<classEntry path="com.degrafa.transform.TransformBase"/>
+<classEntry path="com.degrafa.transform.TransformGroup"/>
+<classEntry path="com.degrafa.transform.TranslateTransform"/>
+<classEntry path="com.degrafa.triggers.EventTrigger"/>
+<classEntry path="com.degrafa.triggers.ITrigger"/>
+<classEntry path="com.degrafa.triggers.PropertyTrigger"/>
+<classEntry path="com.degrafa.triggers.Trigger"/>
+<classEntry path="com.degrafa.utilities.Aliases"/>
+<classEntry path="com.degrafa.utilities.SWFReader"/>
+<classEntry path="com.degrafa.utilities.external.ExternalBitmapData"/>
+<classEntry path="com.degrafa.utilities.external.ExternalDataAsset"/>
+<classEntry path="com.degrafa.utilities.external.ExternalDataPropertyChangeEvent"/>
+<classEntry path="com.degrafa.utilities.external.IExternalData"/>
+<classEntry path="com.degrafa.utilities.external.LoadingLocation"/>
+<classEntry path="com.degrafa.utilities.math.Bisect"/>
+<classEntry path="com.degrafa.utilities.math.CardSpline"/>
+<classEntry path="com.degrafa.utilities.math.CatmullRom"/>
+<classEntry path="com.degrafa.utilities.math.CatmullRomUtility"/>
+<classEntry path="com.degrafa.utilities.math.Consts"/>
+<classEntry path="com.degrafa.utilities.math.Cubic"/>
+<classEntry path="com.degrafa.utilities.math.CubicSpline"/>
+<classEntry path="com.degrafa.utilities.math.Gauss"/>
+<classEntry path="com.degrafa.utilities.math.Halley"/>
+<classEntry path="com.degrafa.utilities.math.Newton"/>
+<classEntry path="com.degrafa.utilities.math.QuadHermiteSpline"/>
+<classEntry path="com.degrafa.utilities.math.QuadraticHermiteCurve"/>
+<classEntry path="com.degrafa.utilities.math.SimpleRoot"/>
+<classEntry path="com.degrafa.utilities.math.Solve2x2"/>
+<classEntry path="com.degrafa.utilities.math.SplineToBezier"/>
+<classEntry path="com.degrafa.utilities.swf.SWFFontReader"/>
+<classEntry path="com.degrafa.utilities.swf.SWFShapeReader"/>
+<classEntry path="com.degrafa.utilities.swf.SWFTag"/>
+<classEntry path="com.degrafa.utilities.swf.fonts.FontGlyph"/>
+<classEntry path="com.degrafa.utilities.swf.fonts.FontName"/>
+<classEntry path="com.degrafa.utilities.swf.fonts.FontSet"/>
+</includeClasses>
+<includeResources>
+<resourceEntry destPath="com/degrafa/geometry/segment/MoveTo.png" sourcePath="com/degrafa/geometry/segment/MoveTo.png"/>
+<resourceEntry destPath="com/degrafa/paint/VectorFill.png" sourcePath="com/degrafa/paint/VectorFill.png"/>
+<resourceEntry destPath="com/degrafa/geometry/segment/LineTo.png" sourcePath="com/degrafa/geometry/segment/LineTo.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/RegularRectangleRepeater.png" sourcePath="com/degrafa/geometry/repeaters/RegularRectangleRepeater.png"/>
+<resourceEntry destPath="com/degrafa/paint/EmptyStroke.png" sourcePath="com/degrafa/paint/EmptyStroke.png"/>
+<resourceEntry destPath="com/degrafa/repeaters/PropertyModifier.png" sourcePath="com/degrafa/repeaters/PropertyModifier.png"/>
+<resourceEntry destPath="com/degrafa/paint/GradientStop.png" sourcePath="com/degrafa/paint/GradientStop.png"/>
+<resourceEntry destPath="com/degrafa/states/AddChild.png" sourcePath="com/degrafa/states/AddChild.png"/>
+<resourceEntry destPath="com/degrafa/paint/RadialGradientStroke.png" sourcePath="com/degrafa/paint/RadialGradientStroke.png"/>
+<resourceEntry destPath="com/degrafa/transform/RotateTransform.png" sourcePath="com/degrafa/transform/RotateTransform.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/LineRepeater.png" sourcePath="com/degrafa/geometry/repeaters/LineRepeater.png"/>
+<resourceEntry destPath="com/degrafa/geometry/segment/EllipticalArcTo.png" sourcePath="com/degrafa/geometry/segment/EllipticalArcTo.png"/>
+<resourceEntry destPath="com/degrafa/geometry/segment/HorizontalLineTo.png" sourcePath="com/degrafa/geometry/segment/HorizontalLineTo.png"/>
+<resourceEntry destPath="com/degrafa/paint/SolidStroke.png" sourcePath="com/degrafa/paint/SolidStroke.png"/>
+<resourceEntry destPath="com/degrafa/geometry/layout/LayoutConstraint.png" sourcePath="com/degrafa/geometry/layout/LayoutConstraint.png"/>
+<resourceEntry destPath="com/degrafa/GraphicImage.png" sourcePath="com/degrafa/GraphicImage.png"/>
+<resourceEntry destPath="com/degrafa/paint/BlendFill.png" sourcePath="com/degrafa/paint/BlendFill.png"/>
+<resourceEntry destPath="com/degrafa/transform/TranslateTransform.png" sourcePath="com/degrafa/transform/TranslateTransform.png"/>
+<resourceEntry destPath="com/degrafa/geometry/segment/VerticalLineTo.png" sourcePath="com/degrafa/geometry/segment/VerticalLineTo.png"/>
+<resourceEntry destPath="com/degrafa/Surface.png" sourcePath="com/degrafa/Surface.png"/>
+<resourceEntry destPath="com/degrafa/states/SetProperty.png" sourcePath="com/degrafa/states/SetProperty.png"/>
+<resourceEntry destPath="com/degrafa/geometry/segment/CubicBezierTo.png" sourcePath="com/degrafa/geometry/segment/CubicBezierTo.png"/>
+<resourceEntry destPath="com/degrafa/paint/RadialGradientFill.png" sourcePath="com/degrafa/paint/RadialGradientFill.png"/>
+<resourceEntry destPath="com/degrafa/geometry/segment/QuadraticBezierTo.png" sourcePath="com/degrafa/geometry/segment/QuadraticBezierTo.png"/>
+<resourceEntry destPath="com/degrafa/triggers/EventTrigger.png" sourcePath="com/degrafa/triggers/EventTrigger.png"/>
+<resourceEntry destPath="com/degrafa/GeometryComposition.png" sourcePath="com/degrafa/GeometryComposition.png"/>
+<resourceEntry destPath="com/degrafa/geometry/RoundedRectangle.png" sourcePath="com/degrafa/geometry/RoundedRectangle.png"/>
+<resourceEntry destPath="com/degrafa/transform/ScaleTransform.png" sourcePath="com/degrafa/transform/ScaleTransform.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/CircleRepeater.png" sourcePath="com/degrafa/geometry/repeaters/CircleRepeater.png"/>
+<resourceEntry destPath="com/degrafa/geometry/Line.png" sourcePath="com/degrafa/geometry/Line.png"/>
+<resourceEntry destPath="com/degrafa/paint/EmptyFill.png" sourcePath="com/degrafa/paint/EmptyFill.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/PolygonRepeater.png" sourcePath="com/degrafa/geometry/repeaters/PolygonRepeater.png"/>
+<resourceEntry destPath="com/degrafa/geometry/segment/Segment.png" sourcePath="com/degrafa/geometry/segment/Segment.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/VerticalLineRepeater.png" sourcePath="com/degrafa/geometry/repeaters/VerticalLineRepeater.png"/>
+<resourceEntry destPath="com/degrafa/geometry/VerticalLine.png" sourcePath="com/degrafa/geometry/VerticalLine.png"/>
+<resourceEntry destPath="com/degrafa/GraphicText.png" sourcePath="com/degrafa/GraphicText.png"/>
+<resourceEntry destPath="com/degrafa/states/RemoveChild.png" sourcePath="com/degrafa/states/RemoveChild.png"/>
+<resourceEntry destPath="com/degrafa/repeaters/GeometryRepeater.png" sourcePath="com/degrafa/repeaters/GeometryRepeater.png"/>
+<resourceEntry destPath="com/degrafa/geometry/AdvancedRectangle.png" sourcePath="com/degrafa/geometry/AdvancedRectangle.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/RoundedRectangleRepeater.png" sourcePath="com/degrafa/geometry/repeaters/RoundedRectangleRepeater.png"/>
+<resourceEntry destPath="com/degrafa/states/State.png" sourcePath="com/degrafa/states/State.png"/>
+<resourceEntry destPath="com/degrafa/paint/SolidFill.png" sourcePath="com/degrafa/paint/SolidFill.png"/>
+<resourceEntry destPath="com/degrafa/transform/TransformGroup.png" sourcePath="com/degrafa/transform/TransformGroup.png"/>
+<resourceEntry destPath="com/degrafa/geometry/Polygon.png" sourcePath="com/degrafa/geometry/Polygon.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/PolylineRepeater.png" sourcePath="com/degrafa/geometry/repeaters/PolylineRepeater.png"/>
+<resourceEntry destPath="com/degrafa/paint/ComplexFill.png" sourcePath="com/degrafa/paint/ComplexFill.png"/>
+<resourceEntry destPath="com/degrafa/geometry/Ellipse.png" sourcePath="com/degrafa/geometry/Ellipse.png"/>
+<resourceEntry destPath="com/degrafa/geometry/segment/ClosePath.png" sourcePath="com/degrafa/geometry/segment/ClosePath.png"/>
+<resourceEntry destPath="com/degrafa/paint/LinearGradientStroke.png" sourcePath="com/degrafa/paint/LinearGradientStroke.png"/>
+<resourceEntry destPath="com/degrafa/paint/BitmapFill.png" sourcePath="com/degrafa/paint/BitmapFill.png"/>
+<resourceEntry destPath="com/degrafa/geometry/HorizontalLine.png" sourcePath="com/degrafa/geometry/HorizontalLine.png"/>
+<resourceEntry destPath="com/degrafa/geometry/Polyline.png" sourcePath="com/degrafa/geometry/Polyline.png"/>
+<resourceEntry destPath="com/degrafa/geometry/Path.png" sourcePath="com/degrafa/geometry/Path.png"/>
+<resourceEntry destPath="com/degrafa/transform/MatrixTransform.png" sourcePath="com/degrafa/transform/MatrixTransform.png"/>
+<resourceEntry destPath="com/degrafa/geometry/EllipticalArc.png" sourcePath="com/degrafa/geometry/EllipticalArc.png"/>
+<resourceEntry destPath="com/degrafa/transform/SkewTransform.png" sourcePath="com/degrafa/transform/SkewTransform.png"/>
+<resourceEntry destPath="com/degrafa/paint/LinearGradientFill.png" sourcePath="com/degrafa/paint/LinearGradientFill.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/HorizontalLineRepeater.png" sourcePath="com/degrafa/geometry/repeaters/HorizontalLineRepeater.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/RoundedRectangleComplexRepeater.png" sourcePath="com/degrafa/geometry/repeaters/RoundedRectangleComplexRepeater.png"/>
+<resourceEntry destPath="com/degrafa/geometry/CubicBezier.png" sourcePath="com/degrafa/geometry/CubicBezier.png"/>
+<resourceEntry destPath="com/degrafa/GeometryGroup.png" sourcePath="com/degrafa/GeometryGroup.png"/>
+<resourceEntry destPath="com/degrafa/triggers/PropertyTrigger.png" sourcePath="com/degrafa/triggers/PropertyTrigger.png"/>
+<resourceEntry destPath="com/degrafa/geometry/RoundedRectangleComplex.png" sourcePath="com/degrafa/geometry/RoundedRectangleComplex.png"/>
+<resourceEntry destPath="com/degrafa/geometry/repeaters/EllipseRepeater.png" sourcePath="com/degrafa/geometry/repeaters/EllipseRepeater.png"/>
+<resourceEntry destPath="com/degrafa/geometry/RegularRectangle.png" sourcePath="com/degrafa/geometry/RegularRectangle.png"/>
+<resourceEntry destPath="com/degrafa/geometry/QuadraticBezier.png" sourcePath="com/degrafa/geometry/QuadraticBezier.png"/>
+<resourceEntry destPath="com/degrafa/paint/palette/Palette.png" sourcePath="com/degrafa/paint/palette/Palette.png"/>
+<resourceEntry destPath="com/degrafa/geometry/Circle.png" sourcePath="com/degrafa/geometry/Circle.png"/>
+</includeResources>
+<namespaceManifests/>
+</flexLibProperties>
